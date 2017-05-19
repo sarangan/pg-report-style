@@ -14,72 +14,463 @@
     sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,
     select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,
     select{*font-size:100%;}legend{color:#000;}
-    * {
-        overflow: visible !important;
-      }
-      /* Your Base Foundation */
+    * { overflow: visible !important; }
+
       html,body { font-family: sans-serif; font-size:12px; }
       .chapter { display: block; clear: both; page-break-after: always; padding: 20px; }
       .block { display: block; clear: both; padding: 20px;}
-      .heading{ font-size:20px; color: #0088CC; line-height: 18px; margin-bottom: 20px;}
-      table, tr, td       {   }
+      .heading{ font-size:25px; color: #0088CC; line-height: 28px; margin-bottom: 20px; font-weight: bold;}
+      .sub-heading{ font-size: 25px; color: #797979; line-height: 28px; font-weight: bold;}
+      hr { border:0; margin:0; padding:0; height:1px; color:#797979; background-color:#797979; margin-top: 7px; margin-bottom: 30px;}
 
-.table              { border: 0; width: 100%; margin-bottom: 40px; }
-.table td           { padding: 10px; border-bottom: 1px solid #E5E5E5; }
-.table tr           { font-size: 14px;  padding: 10px;}
+      thead { display: table-header-group; }
+      tfoot { display: table-row-group; }
+      tr { page-break-inside: avoid; }
 
-.table thead        { background-color: #dcdcdc; }
-.table th           { padding: 5px; text-align: left; font-size: 14px; }
-.table tfoot td     { }
-th.col1 { width: 90%; }
-th.col2 { width: 10%; }
+      .contents-table, .format-table { border: 0; width: 100%; margin-bottom: 40px; }
+      .contents-table td, .format-table td{ padding: 10px; border-bottom: 1px solid #E5E5E5; }
+      .contents-table tr, .format-table tr{ font-size: 14px;  padding: 10px;}
+      .contents-table thead { background-color: #dcdcdc; }
+      .format-table thead { background-color: #0088CC; }
+      .contents-table th { padding: 10px; text-align: left; font-size: 14px; }
+      .format-table th { padding: 10px; text-align: left; font-size: 16px; color: #ffffff;}
+      .contents-table tfoot td, .format-table tfoot td { }
+
+      .contents-table th.col1 { width: 90%; }
+      .contents-table th.col2 { width: 10%; }
+
+      .condtion-tbl th.col1 { width: 20%; }
+      .condtion-tbl th.col2 { width: 10%; }
+      .condtion-tbl th.col3 { width: 70%; }
+
+      .report-tbl1 th.col1 {width: 20%;}
+      .report-tbl1 th.col2 {width: 25%;}
+      .report-tbl1 th.col3 {width: 40%;}
+      .report-tbl1 th.col4 {width: 15%;}
+
+      .report-tbl2 th.col1 {width: 20%;}
+      .report-tbl2 th.col2 {width: 20%;}
+      .report-tbl2 th.col3 {width: 40%;}
+      .report-tbl2 th.col4 {width: 20%;}
+
+      .report-tbl3 th.col1 {width: 20%;}
+      .report-tbl3 th.col2 {width: 40%;}
+      .report-tbl3 th.col3 {width: 40%;}
 
       .left-text{  }
       .right-text{ text-align: right;}
+
+      .img-wrapper{width: 20%; padding: 10px; background-color: #e1e1e1; display: inline-block; margin: 5px}
+      .rt-1-img{ width: 100%; height: auto;  display: inline-block;}
+
+      .rt-2-tbl-img{ width: 90%; height: auto;}
+      .report-tbl2{ margin-top: 20px;}
+      .rt-2-top-img-wrapper{ margin-bottom: 10px;}
+
+      .report-tbl3{ margin-top: 20px;}
+      .rt-3-tbl-img{ width: 20%; height: auto; }
+
     </style>
   </head>
   <body>
     <div class="chapter">
       <div class="heading">Table of contents</div>
       <div>
-        <table class="table">
-                       <thead>
-                               <th class="col1">Title</th>
-                               <th class="col2">page no.</th>
-                       </thead>
-                       <tbody>
-                         <tr>
-                            <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                            <td class="col2"> <span class="right-text">1</span></td>
-                          </tr>
-                          <tr>
-                             <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                             <td class="col2"> <span class="right-text">1</span></td>
-                           </tr>
-                           <tr>
-                              <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                              <td class="col2"> <span class="right-text">1</span></td>
-                            </tr>
-                            <tr>
-                               <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                               <td class="col2"> <span class="right-text">1</span></td>
-                             </tr>
-                             <tr>
-                                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                                <td class="col2"> <span class="right-text">1</span></td>
-                              </tr>
-                              <tr>
-                                 <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                                 <td class="col2"> <span class="right-text">1</span></td>
-                               </tr>
-                               <tr>
-                                  <td class="col1"><span class="left-text">Schedule of conditions</span></td>
-                                  <td class="col2"> <span class="right-text">1</span></td>
-                                </tr>
-                       </tbody>
-          </table>
+        <table class="contents-table">
+           <thead>
+             <th class="col1">Title</th>
+             <th class="col2">page no.</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                 <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                 <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                  <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                  <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                   <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                   <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                  <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                  <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                 <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                 <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+              </tr>
+           </tbody>
+        </table>
       </div>
     </div>
+
+    <div class="chapter">
+      <div class="sub-heading">General Condition</div>
+      <hr/>
+      <div>
+        <table class="format-table condtion-tbl">
+           <thead>
+             <th class="col1">Condition</th>
+             <th class="col2">Summary</th>
+             <th class="col3">Note</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+                <td class="col3"> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+                <td class="col3"> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+                <td class="col3"> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+                <td class="col3"> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"><span class="left-text">Schedule of conditions</span></td>
+                <td class="col2"> <span class="right-text">1</span></td>
+                <td class="col3"> <span class="right-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="chapter">
+      <div class="sub-heading">Report style 1</div>
+      <hr/>
+      <div>
+        <table class="format-table report-tbl1">
+           <thead>
+             <th class="col1">Item</th>
+             <th class="col2">Description</th>
+             <th class="col3">Condition</th>
+             <th class="col4">Tenant Comments</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Good man</span></td>
+                <td class="col4"> <span class="right-text"></span></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Good man</span></td>
+                <td class="col4"> <span class="right-text"></span></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Good man</span></td>
+                <td class="col4"> <span class="right-text"></span></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Good man</span></td>
+                <td class="col4"> <span class="right-text"></span></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Good man</span></td>
+                <td class="col4"> <span class="right-text"></span></td>
+              </tr>
+
+              <tr>
+                <td colspan="4">
+
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+
+                </td>
+              </tr>
+
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="chapter">
+      <div class="sub-heading">Report style 2</div>
+      <hr/>
+      <div>
+
+        <div class="rt-2-top-img-wrapper">
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+        </div>
+        <div class="rt-2-des">
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </div>
+        <table class="format-table report-tbl2">
+           <thead>
+             <th class="col1">Item</th>
+             <th class="col2">Description</th>
+             <th class="col3">Condition</th>
+             <th class="col4">Image</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col4"> <img src="images/img.jpeg" alt="img" class="rt-2-tbl-img" /></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col4"> <img src="images/img.jpeg" alt="img" class="rt-2-tbl-img" /></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col4"> <img src="images/img.jpeg" alt="img" class="rt-2-tbl-img" /></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col4"> <img src="images/img.jpeg" alt="img" class="rt-2-tbl-img" /></td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col4"> <img src="images/img.jpeg" alt="img" class="rt-2-tbl-img" /></td>
+              </tr>
+
+              <tr>
+                <td colspan="4">
+
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+
+                </td>
+              </tr>
+
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="chapter">
+      <div class="sub-heading">Report style 3</div>
+      <hr/>
+      <div>
+
+        <div class="rt-2-top-img-wrapper">
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+            <span>Ref#</span>
+          </div>
+        </div>
+        <div class="rt-2-des">
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        </div>
+        <table class="format-table report-tbl3">
+           <thead>
+             <th class="col1">Item</th>
+             <th class="col2">Description</th>
+             <th class="col3">Condition</th>
+           </thead>
+           <tbody>
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"></td>
+                <td colspan="2">
+                  <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"></td>
+                <td colspan="2">
+                  <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" />
+                </td>
+              </tr>
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"></td>
+                <td colspan="2">
+                  <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" />
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="col1"><span class="left-text">Door</span></td>
+                <td class="col2"> <span class="left-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+                <td class="col3"> <span class="left-text">Good man Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></td>
+              </tr>
+              <tr>
+                <td class="col1"></td>
+                <td colspan="2">
+                  <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" /> <img src="images/img.jpeg" alt="img" class="rt-3-tbl-img" />
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="4">
+
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+                  <div class="img-wrapper">
+                    <img src="images/img.jpeg" alt="img" class="rt-1-img" />
+                    <span>Ref#</span>
+                  </div>
+
+                </td>
+              </tr>
+
+           </tbody>
+        </table>
+      </div>
+    </div>
+
+
     <div class="chapter">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
