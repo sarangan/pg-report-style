@@ -30,7 +30,7 @@
 
         <div class="chapter">
 
-          <table style="width: 100%; border: 0; margin-top: 20px;">
+          <!-- <table style="width: 100%; border: 0; margin-top: 20px;">
              <thead>
                <th style="width: 30%;"></th>
                <th style="width: 70%;"></th>
@@ -58,22 +58,86 @@
               </tbody>
           </table>
 
-          <div style="width: 100%; border: 0; margin-top: 20px; text-align:center;">
+          <div style="width: 100%; border: 0; margin-top: 45px; text-align:center;">
 
-            <div style="background-color: #d0d0d0; color: #000000; margin-bottom: 30px;  padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; display:inline-block; ">
-              <div style="font-size: 23px; font-weight: bold; margin-bottom: 5px; letter-spacing: 1px; ">Inventory and Check In Report</div>
-              <div style="font-size: 20px;">Lorem ipsum dolor sit amet</div>
-              <div style="font-size: 20px;">Lorem ipsum dolor sit amet</div>
+            <div style="width: 100%; border: 0; text-align:center;">
+              <div style="color: #000000; margin-bottom: 10px;  padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; display:inline-block; ">
+                <div style="font-size: 25px; font-weight: bold; margin-bottom: 5px; letter-spacing: 1px; ">Inventory and Check In Report</div>
+              </div>
             </div>
 
             <br/>
-
-            <div style="text-align: center; margin-top: 10px; margin-bottom: 30px;  display:inline-block; ">
-              <img src="C:/Users/ksara/Desktop/pgreport/images/img.jpeg" alt="img" style="width: 100%; height: auto;  display: inline-block; max-width: 300px;" />
+            <div style="width: 100%; border: 0; text-align:center;">
+              <div style="padding: 0px; background-color: #ffffff; border-bottom: 4px solid #2196F3; border-top: 4px solid #2196F3; display: inline-block;">
+                <img src="C:/Users/ksara/Desktop/pgreport/images/img.jpeg" alt="img" style="width: 100%; height: auto;  display: inline-block; max-width: 600px;" />
+              </div>
             </div>
 
+            <div style="width: 100%; text-align:center; border-top: 1px solid #2196F3; margin-top: 40px;">
+              <div style="background-color: #ffffff; color: #000000; text-align:left; margin-top: 10px; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; display:inline-block; ">
+                <div style="font-size: 16px; margin-bottom: 5px;">Prepared by: John Doe</div>
+                <div style="font-size: 16px; margin-bottom: 5px;">Date of Inspection: 12/02/1984</div>
+                <div style="font-size: 16px; margin-bottom: 5px;">Tenant: tanent</div>
+              </div>
+            </div>
 
-          </div>
+          </div> -->
+
+
+          <!-- <table style="width: 100%; border: 0; margin-top: 20px;">
+             <thead>
+               <th style="width: 30%;"></th>
+               <th style="width: 70%;"></th>
+             </thead>
+             <tbody>
+                <tr>
+                  <td style="text-align: left;">
+                    <div style="width: 100%; padding: 10px; background-color: #ffffff; ">
+                      <img src="C:/Users/ksara/Desktop/pgreport/images/logo.png" alt="img" style="width: 150px; height: auto; max-width: 150px;"/>
+                    </div>
+                  </td>
+                  <td style="text-align: right; border-top: 1px solid #2196F3; border-bottom: 1px solid #2196F3; padding: 10px;">
+
+                    <div style="background-color: #ffffff; color: #000000; ">
+                      <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px; letter-spacing: 1px; ">Inventory and Check In Report</div>
+                      <div style="font-size: 16px; margin-bottom: 5px;">Prepared by: John Doe</div>
+                      <div style="font-size: 16px; margin-bottom: 5px;">Date of Inspection: 12/02/1984</div>
+                      <div style="font-size: 16px; margin-bottom: 5px;">Tenant: tanent</div>
+                    </div>
+
+                  </td>
+
+                </tr>
+
+              </tbody>
+          </table>
+
+          <div style="width: 100%; border: 0; margin-top: 45px; text-align:center;">
+
+            <div style="width: 100%; border: 0; text-align:center;">
+              <div style="background-color: #d0d0d0; color: #000000; margin-bottom: 20px;  padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; display:inline-block; ">
+                <div style="font-size: 23px; font-weight: bold; margin-bottom: 5px; letter-spacing: 1px; ">Inventory and Check In Report</div>
+                <div style="font-size: 18px;">Lorem ipsum dolor sit amet</div>
+                <div style="font-size: 18px;">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+
+            <br/>
+            <div style="width: 100%; border: 0; text-align:center;">
+              <div style="padding: 10px; background-color: #ffffff; border: 1px solid #efefef; display: inline-block;">
+                <img src="C:/Users/ksara/Desktop/pgreport/images/img.jpeg" alt="img" style="width: 100%; height: auto;  display: inline-block; max-width: 300px;" />
+              </div>
+            </div>
+
+            <div style="width: 100%; border: 0; text-align:center;">
+              <div style="background-color: #ffffff; color: #000000; margin-top: 40px; text-align:left; padding-top: 10px; padding-bottom: 10px; padding-right: 10px; padding-left: 10px; display:inline-block; ">
+                <div style="font-size: 16px; margin-bottom: 5px;">Prepared by: John Doe</div>
+                <div style="font-size: 16px; margin-bottom: 5px;">Date of Inspection: 12/02/1984</div>
+                <div style="font-size: 16px; margin-bottom: 5px;">Tenant: tanent</div>
+              </div>
+            </div>
+
+          </div> -->
 
           <!-- <table style="width: 100%; border: 0; margin-top: 20px;">
              <thead>
@@ -140,8 +204,8 @@
               </tbody>
           </table> -->
 
-
-          <!-- <table style="width: 100%; border: 0; margin-top: 5px;">
+          <!-- TOP left -->
+          <table style="width: 100%; border: 0; margin-top: 5px;">
              <thead>
                <th style="width: 40%;"></th>
                <th style="width: 60%;"></th>
@@ -175,7 +239,7 @@
                 </tr>
 
               </tbody>
-          </table> -->
+          </table>
 
         </div>
 
